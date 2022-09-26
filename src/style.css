@@ -1,0 +1,144 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100vh;
+}
+body {
+  align-items: center;
+  align-self: center;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(255, 255, 255);
+  padding: auto;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/*.swiper-slide .card img {
+  display: block;
+  width: 10%;
+  border-radius: 50%;
+  align-items: center;
+  align-self: center;
+  display: inline;
+  /*padding: none;
+  margin: none;
+  height: 100%;
+  object-fit: cover;
+}*/
+
+/* testimonial cards */
+.card {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin: 30px;
+  padding-bottom: 20px;
+  border-radius: 3%;
+  /*padding-top: 10px;*/
+  border: 1px solid rgb(243, 243, 243);
+  box-shadow: 0 2.8px 2.2px rgba(218, 217, 217, 0.463),
+    0 6.7px 5.3px rgba(218, 218, 218, 0.263),
+    0 12.5px 10px rgba(180, 180, 180, 0.189),
+    0 22.3px 17.9px rgba(209, 208, 208, 0.308),
+    0 41.8px 33.4px rgba(225, 224, 224, 0.086),
+    0 100px 80px rgba(254, 254, 254, 0.201);
+}
+
+/* client Details */
+.card .client-details p {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.client-details .company-logo img {
+  width: 120px;
+  padding-bottom: 10px;
+}
+
+/* client Details ends */
+
+/* client */
+.card .client-msg {
+  /*margin-top: 30px;*/
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  height: 100px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-left: 2rem;
+  padding-right: 0.5rem;
+}
+
+.card .client-msg p {
+  color: rgb(103, 103, 103);
+  font-size: 17px;
+}
+.card .client-details h4 {
+  color: rgb(143, 143, 143);
+  font-size: 17px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+.card .client-details p {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.card .avatar img {
+  width: 60px;
+  height: 60px;
+  margin-top: -50px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 2px 2.5px 2.2px rgba(255, 255, 255, 0.806),
+    0px 2px 10px rgba(220, 221, 243, 0.806),
+    0px 2px 10px rgba(176, 176, 176, 0.806),
+    0px 2px 10px rgba(204, 201, 239, 0.806),
+    0px 2px 10px rgba(219, 219, 242, 0.806);
+  align-items: center;
+  align-self: center;
+  display: inline;
+  background-size: cover;
+}
+
+/* custom scrollbar */
+.card .client-msg::-webkit-scrollbar {
+  width: 10px;
+}
+
+.card .client-msg::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+.card .client-msg::-webkit-scrollbar-thumb {
+  background-color: rgb(211, 211, 211);
+  border-radius: 5px;
+  border: 3px solid rgba(255, 255, 255, 0.041);
+}
